@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Künstler</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Work+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <h1>Studio Ruth</h1>
+        <ul>
+          <li><a href="#start">Start</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#malerei">Malerei</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section id="start" class="hero">
+        <div class="hero-media slider" aria-label="Bild-Slider">
+          <div class="slide active" style="background-image: url('Bild.png');"></div>
+          <div
+            class="slide"
+            style="background-image: url('https://images.unsplash.com/photo-1465311440653-ba9b1d68da21?auto=format&fit=crop&w=900&q=80');"
+          ></div>
+          <div
+            class="slide"
+            style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80');"
+          ></div>
+        </div>
+        <div class="hero-copy">
+          <p class="eyebrow">Studio Ruth</p>
+          <h1>Portfolio</h1>
+          <p>
+            Vier künstlerische Positionen zwischen Malerei, Performance, Skulptur und Landschaft –
+            präsentiert in einer immersiven, modernen Umgebung.
+          </p>
+          <div class="hero-actions">
+            <button type="button" onclick="document.querySelector('#portfolio').scrollIntoView({behavior: 'smooth'})">
+              Kollektionen entdecken
+            </button>
+            <a class="text-link" href="#contact">Direkt Kontakt aufnehmen</a>
+          </div>
+        </div>
+      </section>
+
+      
+      <section id="portfolio" class="categories">
+        <p class="eyebrow">Kollektionen</p>
+        <h2>Vier Perspektiven auf meine Kunst</h2>
+        <p class="section-intro">
+          Jede Serie erzählt eine eigenständige Geschichte – inspiriert von Körperbewegungen, organischen Formen
+          und weiten Landschaften.
+        </p>
+        <div class="category-grid">
+          <a href="#malerei" class="category-card">
+            <div class="icon">
+              <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 6h24v20H4z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="22" cy="16" r="3" fill="currentColor"/></svg>
+            </div>
+            <div>
+              <h3>Malerei</h3>
+              <p>Gestische Leinwände</p>
+            </div>
+          </a>
+          <a href="#performance" class="category-card">
+            <div class="icon">
+              <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 26V6l10 6 10-6v20l-10-6z" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <div>
+              <h3>Performance</h3>
+              <p>Bewegte Bilder</p>
+            </div>
+          </a>
+          <a href="#skulptur" class="category-card">
+            <div class="icon">
+              <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M10 28L6 10l10-6 10 6-4 18z" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <div>
+              <h3>Skulptur</h3>
+              <p>Raumgreifende Formen</p>
+            </div>
+          </a>
+          <a href="#landschaft" class="category-card">
+            <div class="icon">
+              <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M2 22l8-10 6 8 6-6 8 10z" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <div>
+              <h3>Landschaft</h3>
+              <p>Licht & Horizonte</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="mosaic" aria-label="Bildmosaik">
+        <div class="mosaic-copy">
+          <p class="eyebrow">Im Fokus</p>
+          <h2>Momente aus dem Atelier</h2>
+          <p>
+            Ein visuelles Mosaik, das aktuelle Leinwände, Performances und Skulpturen miteinander verbindet.
+            Jede Fläche verweist auf einen anderen Prozess – spontan, körperlich, landschaftlich.
+          </p>
+        </div>
+        <div class="mosaic-grid">
+          <figure class="mosaic-item tall">
+            <img src="triv.jpg" alt="Detailaufnahme einer texturierten Leinwand" />
+          </figure>
+          <figure class="mosaic-item wide">
+            <img src="Bild.png" alt="Großformatige Malerei in satten Pinktönen" />
+          </figure>
+          <figure class="mosaic-item">
+            <img
+              src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=800&q=80"
+              alt="Werkzeuge und Farben im Atelier"
+            />
+          </figure>
+          <figure class="mosaic-item tall">
+            <img
+              src="https://images.unsplash.com/photo-1458530970867-aaa3700e9661?auto=format&fit=crop&w=800&q=80"
+              alt="Skulpturale Struktur mit Licht und Schatten"
+            />
+          </figure>
+          <figure class="mosaic-item wide">
+            <img
+              src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1000&q=80"
+              alt="Performance-Szene in Bewegung"
+            />
+          </figure>
+          <figure class="mosaic-item">
+            <img
+              src="https://images.unsplash.com/photo-1508264165352-258a6f9464d2?auto=format&fit=crop&w=800&q=80"
+              alt="Landschaftsstudie mit weitem Horizont"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section id="malerei" class="art-section">
+        <div class="art-visual" data-variant="malerei"></div>
+        <div class="art-copy">
+          <p class="eyebrow">Malerei</p>
+          <h2>Zwischen Intuition und Steuerung</h2>
+          <p>
+            Gestische Spuren treffen auf kontrollierte Linien. Jede Leinwand ist eine Balance aus Emotion und
+            Struktur, eine Einladung, Farbe als Resonanzraum zu erleben.
+          </p>
+          <button type="button" onclick="document.querySelector('#contact').scrollIntoView({behavior: 'smooth'})">
+            Serie öffnen
+          </button>
+        </div>
+      </section>
+
+      <section id="performance" class="art-section">
+        <div class="art-visual" data-variant="performance"></div>
+        <div class="art-copy">
+          <p class="eyebrow">Performance</p>
+          <h2>Körper als Werkzeug</h2>
+          <p>
+            Performative Arbeiten übersetzen Bewegung in Bilder. Die Bühne wird zum Atelier, die Kamera zum Pinsel,
+            das Publikum Teil des Werkes.
+          </p>
+          <button type="button" onclick="document.querySelector('#contact').scrollIntoView({behavior: 'smooth'})">
+            Performance anfragen
+          </button>
+        </div>
+      </section>
+
+      <section id="skulptur" class="art-section">
+        <div class="art-visual" data-variant="skulptur"></div>
+        <div class="art-copy">
+          <p class="eyebrow">Skulptur</p>
+          <h2>Material trifft Bewegung</h2>
+          <p>
+            Skulpturen aus Holz, Metall und Sandstein bespielen Räume mit fließenden Konturen. Sie reagieren auf
+            Licht, Schatten und Berührung.
+          </p>
+          <button type="button" onclick="document.querySelector('#contact').scrollIntoView({behavior: 'smooth'})">
+            Atelier besuchen
+          </button>
+        </div>
+      </section>
+
+      <section id="landschaft" class="art-section">
+        <div class="art-visual" data-variant="landschaft"></div>
+        <div class="art-copy">
+          <p class="eyebrow">Landschaft</p>
+          <h2>Horizonte für die Öffentlichkeit</h2>
+          <p>
+            Großformatige Landschaftsarbeiten verbinden Natur mit urbanen Räumen. Sie schaffen Orte der Ruhe und
+            beherbergen temporäre Installationen.
+          </p>
+          <button type="button" onclick="document.querySelector('#contact').scrollIntoView({behavior: 'smooth'})">
+            Projekt anstoßen
+          </button>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div>
+          <p class="eyebrow">Kontakt</p>
+          <h2>Kontaktieren Sie mich</h2>
+          <p>
+            Lassen Sie uns über Projekte, Ausstellungen oder Kooperationen sprechen. Ich freue mich auf Ihre Nachricht.
+          </p>
+          <form action="mailto:misca702@gmail.com" method="POST" enctype="text/plain">
+            <input type="text" name="name" placeholder="Ihr Name" required />
+            <input type="email" name="email" placeholder="Ihre E-Mail" required />
+            <textarea name="message" placeholder="Ihre Nachricht" required></textarea>
+            <button type="submit">Absenden</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>&copy; <span id="year"></span> Studio Ruth · Alle Rechte vorbehalten</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
